@@ -17,6 +17,9 @@ export default {
         good: "#6FCF97",
         bad: "#F2545B",
         warn: "#E8B04A",
+        terminal: "#0d1117",
+        termText: "#c9d1d9",
+        termGreen: "#00ff9c",
       },
       fontFamily: {
         mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "monospace"],

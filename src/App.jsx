@@ -36,7 +36,7 @@ export default function App() {
             <div className="flex min-h-screen bg-ink">
               <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 flex flex-col">
                 <header className="lg:hidden sticky top-0 z-20 flex items-center justify-between px-5 py-3.5 border-b border-line bg-ink/95 backdrop-blur">
                   <span className="font-mono text-sm font-semibold text-text">CodeSprint</span>
                   <button
@@ -48,7 +48,7 @@ export default function App() {
                   </button>
                 </header>
 
-                <main>
+                <main className="flex-1 min-h-0 flex flex-col">
                   <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/section/:sectionSlug" element={<SectionPage />} />
